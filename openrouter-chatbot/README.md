@@ -26,7 +26,7 @@ Aplicación educativa mínima para entender la comunicación:
 Frontend -> Backend Express -> OpenRouter -> Backend -> Frontend
 ```
 
-El proyecto permite conversar con el modelo `nvidia/nemotron-3.5-lightning:free` desde una interfaz web o directamente desde la terminal.
+El proyecto permite conversar con el modelo `google/gemma-4-26b-a4b-it:free` desde una interfaz web o directamente desde la terminal.
 
 ## Tecnologías
 
@@ -91,7 +91,7 @@ El archivo debe tener esta forma, usando tu clave local:
 
 ```env
 OPENROUTER_API_KEY=tu_api_key_aqui
-OPENROUTER_MODEL=nvidia/nemotron-3.5-lightning:free
+OPENROUTER_MODEL=google/gemma-4-26b-a4b-it:free
 ```
 
 No incluyas una clave real en este README ni la subas a Git. El archivo `.env` está incluido en `.gitignore`.
@@ -121,7 +121,7 @@ Inicia el servidor en modo desarrollo:
 npm run dev
 ```
 
-Abre http://localhost:3000 en el navegador. También puedes usar el modo normal:
+Abre http://localhost:3001 en el navegador. También puedes usar el modo normal:
 
 ```bash
 npm start
@@ -208,7 +208,7 @@ Los errores de OpenRouter se imprimen en la terminal y se muestran en la consola
 Este proyecto queda configurado con un único modelo:
 
 ```env
-OPENROUTER_MODEL=nvidia/nemotron-3.5-lightning:free
+OPENROUTER_MODEL=google/gemma-4-26b-a4b-it:free
 ```
 
 Para cambiarlo, sustituye el valor por el identificador exacto de otro modelo disponible en OpenRouter y reinicia el servidor o la consola. Cada ejecución utiliza exclusivamente el modelo configurado y realiza una sola petición.
